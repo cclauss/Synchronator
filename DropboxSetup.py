@@ -81,7 +81,7 @@ def init(token_filename, access_token=None, token_directory='.Tokens'):
     token_directory = token_directory or ''
     if token_directory and (token_directory[-1] != os.sep):
         token_directory += os.sep
-    if token_directory not in ['', '.']:
+    if token_directory not in ('', '.'):
         if not os.path.exists(token_directory):
             os.mkdir(token_directory)
     if not access_token:
